@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="윤연서의 Band Web 프로젝트" />
+    <title>Band Web Project | 윤연서</title>
+    <link rel="stylesheet" href="../styles.css?v=66e0b7a-5" />
+    <script src="../script.js?v=66e0b7a-5" defer></script>
+  </head>
+  <body class="project-page">
+    <header class="project-page-header">
+      <a href="../index.html#projects">← 프로젝트로 돌아가기</a><a class="wordmark" href="../index.html">YYS<span>.</span></a><a href="../index.html">HOME</a>
+    </header>
+    <main class="project-detail">
+      <section class="detail-hero reveal-on-scroll">
+        <div><p class="detail-label">03 · WEB · 2025.12—2026.01</p><h1>실제 운영에서 발견한 문제를 해결하다</h1></div>
+        <p class="detail-summary">공연 입장 관리, 음료 예약, 경품 이벤트를 수작업으로 처리하며 발생한 혼선과 대기 시간을 줄이기 위해 운영 전반을 하나의 웹 서비스로 통합했습니다.</p>
+      </section>
+      <div class="detail-cover reveal-on-scroll"><img src="../assets/band.png" alt="밴드 공연 운영 웹 프로젝트 화면" /></div>
+      <section class="detail-sections">
+        <article class="detail-section reveal-on-scroll"><span>01</span><h2>배경</h2><p>실제 밴드 공연 운영 경험에서 반복되는 입장 번호 발급과 현장 대기의 문제를 발견했습니다.</p></article>
+        <article class="detail-section reveal-on-scroll"><span>02</span><h2>문제</h2><p>동시 요청 시 동일한 입장 번호가 중복 발급되는 Race Condition이 발생했습니다.</p></article>
+        <article class="detail-section reveal-on-scroll"><span>03</span><h2>해결</h2><p>번호 발급을 데이터베이스의 원자적 처리 방식으로 변경해 동시 접속 환경에서도 모든 사용자에게 고유 번호가 안정적으로 발급되도록 개선했습니다.</p></article>
+      </section>
+      <nav class="project-pagination" aria-label="프로젝트 이동"><a href="temi.html">← 이전 프로젝트<br />TEMI ROBOT</a><a href="scheduler.html">다음 프로젝트<br />CLUB SCHEDULER →</a></nav>
+    </main>
+  </body>
+</html>
