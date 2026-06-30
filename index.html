@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="문제를 이해하고 끝까지 해결하는 데이터분석가 윤연서의 포트폴리오"
+    />
+    <meta name="theme-color" content="#b7f36b" />
+    <title>윤연서 | Portfolio</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="첫 화면으로 이동">YYS<span>.</span></a>
+      <nav aria-label="주요 메뉴">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="mailto:ysyoon2013@gmail.com">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-intro">
+          <p class="eyebrow reveal-up">DATA ANALYST · DEVELOPER</p>
+          <h1 id="hero-title" class="hero-title">
+            <span class="reveal-line"><span>이해를 멈추지 않고,</span></span>
+            <span class="reveal-line"><span>해결을 포기하지 않는</span></span>
+          </h1>
+          <div class="name-row reveal-up delay-3">
+            <p>데이터분석가</p>
+            <strong>윤연서</strong>
+          </div>
+          <p class="hero-copy reveal-up delay-4">
+            기능을 만드는 데서 멈추지 않고, 문제의 원인을 이해해 더 나은 경험으로
+            연결합니다.
+          </p>
+          <a class="hero-cta reveal-up delay-5" href="#projects">
+            프로젝트 보기 <span aria-hidden="true">↘</span>
+          </a>
+        </div>
+
+        <article class="profile-panel reveal-up delay-2" id="about">
+          <div class="profile-head">
+            <img src="assets/profile.png" alt="윤연서 프로필 사진" />
+            <div>
+              <span>YOON YEON SEO</span>
+              <h2>문제를 이해하고<br />해결하는 과정</h2>
+            </div>
+          </div>
+
+          <p class="motto">
+            어려운 문제를 마주했을 때 포기하기보다 원인을 찾습니다. 다양한 자료를
+            탐색하고 시행착오를 반복하더라도 끝까지 해결 방법을 찾아갑니다.
+          </p>
+
+          <div class="profile-grid">
+            <section>
+              <h3>Education</h3>
+              <p><time>2024.03 —</time> 광운대학교 정보융합학부 재학</p>
+              <p><time>2021.03 — 2023.12</time> 대평고등학교 졸업</p>
+            </section>
+            <section>
+              <h3>Activity</h3>
+              <p><time>2026.06 —</time> CHIC 학회 운영진</p>
+              <p><time>2026.05 —</time> 교내 경진대회 HOPE</p>
+              <p><time>2025.12 —</time> 교내 중앙동아리 운영진</p>
+            </section>
+            <section>
+              <h3>Award & Certificate</h3>
+              <p><time>2026.03</time> SQLD 취득</p>
+              <p><time>2024.12</time> 교내 학업 우수상</p>
+            </section>
+            <section class="skills">
+              <h3>Skills</h3>
+              <div class="skill-icons" aria-label="보유 기술: Python, Java, SQL, C">
+                <i class="devicon-python-plain colored" title="Python"></i>
+                <i class="devicon-java-plain colored" title="Java"></i>
+                <i class="devicon-mysql-original colored" title="SQL"></i>
+                <i class="devicon-c-plain colored" title="C"></i>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <div class="scroll-hint" aria-hidden="true"><span></span>SCROLL</div>
+      </section>
+
+      <section class="projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal-on-scroll">
+          <p class="eyebrow">SELECTED WORKS · 2025—2026</p>
+          <h2 id="projects-title">문제를 발견하고,<br />서비스로 답했습니다.</h2>
+          <p>카드를 움직여 보고, 눌러서 프로젝트 이야기를 확인해 보세요.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-item reveal-on-scroll">
+            <button class="project-card" type="button" data-project="uxui" aria-label="UXUI 프로젝트 상세 보기">
+              <span class="phone-shell">
+                <span class="phone-speaker"></span>
+                <span class="phone-screen"><img src="assets/uxui.png" alt="AI 행정 비서 UXUI 화면" /></span>
+              </span>
+              <span class="card-shine" aria-hidden="true"></span>
+            </button>
+            <div class="project-meta">
+              <span>01 · UX/UI</span><time>2026.04 — 06</time>
+              <h3>사용자 없이 완성되는<br />프로젝트는 없다</h3>
+            </div>
+          </article>
+
+          <article class="project-item reveal-on-scroll">
+            <button class="project-card" type="button" data-project="temi" aria-label="Temi Robot 프로젝트 상세 보기">
+              <span class="phone-shell phone-light">
+                <span class="phone-speaker"></span>
+                <span class="phone-screen"><img src="assets/temi.png" alt="Temi Robot 연동 서비스 화면" /></span>
+              </span>
+              <span class="card-shine" aria-hidden="true"></span>
+            </button>
+            <div class="project-meta">
+              <span>02 · TEAM</span><time>2026.04 — 06</time>
+              <h3>서비스 완성도를<br />높인 협업</h3>
+            </div>
+          </article>
+
+          <article class="project-item reveal-on-scroll">
+            <button class="project-card" type="button" data-project="band" aria-label="Band Web 프로젝트 상세 보기">
+              <span class="phone-shell phone-dark">
+                <span class="phone-speaker"></span>
+                <span class="phone-screen"><img src="assets/band.png" alt="밴드 공연 운영 웹 화면" /></span>
+              </span>
+              <span class="card-shine" aria-hidden="true"></span>
+            </button>
+            <div class="project-meta">
+              <span>03 · WEB</span><time>2025.12 — 2026.01</time>
+              <h3>실제 운영에서 발견한<br />문제를 해결하다</h3>
+            </div>
+          </article>
+
+          <article class="project-item reveal-on-scroll">
+            <button class="project-card" type="button" data-project="scheduler" aria-label="Club Scheduler 프로젝트 상세 보기">
+              <span class="phone-shell phone-blue">
+                <span class="phone-speaker"></span>
+                <span class="phone-screen"><img src="assets/scheduler.png" alt="동아리 통합 일정 관리 화면" /></span>
+              </span>
+              <span class="card-shine" aria-hidden="true"></span>
+            </button>
+            <div class="project-meta">
+              <span>04 · PERSONAL</span><time>2026.06 —</time>
+              <h3>불편을 시스템으로<br />해결하는 기획과 설계</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section reveal-on-scroll" aria-labelledby="contact-title">
+        <p class="eyebrow">LET'S SOLVE SOMETHING</p>
+        <h2 id="contact-title">함께 풀어갈 문제가 있다면.</h2>
+        <div class="contact-links">
+          <a href="mailto:ysyoon2013@gmail.com">ysyoon2013@gmail.com <span>↗</span></a>
+          <a href="https://github.com/yyeonseoo" target="_blank" rel="noreferrer">github.com/yyeonseoo <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>© 2026 YOON YEON SEO</span><a href="#home">BACK TO TOP ↑</a></footer>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="프로젝트 상세 닫기">×</button>
+      <div class="dialog-layout">
+        <div class="dialog-visual"><img id="dialog-image" src="" alt="" /></div>
+        <div class="dialog-content">
+          <p class="eyebrow" id="dialog-label"></p>
+          <h2 id="dialog-title"></h2>
+          <p class="dialog-summary" id="dialog-summary"></p>
+          <dl id="dialog-details"></dl>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

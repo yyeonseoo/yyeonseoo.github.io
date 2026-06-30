@@ -1,0 +1,6 @@
+.tools/
+.pdf-tools/
+pdf-pages/
+extract_assets.py
+portfolio-source.pdf
+*-preview*.png
