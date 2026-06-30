@@ -123,6 +123,7 @@ nav a:hover::after, nav a:focus-visible::after { transform: scaleX(1); transform
 
 .reveal-on-scroll { opacity: 0; transform: translateY(70px); transition: opacity .9s ease, transform .9s cubic-bezier(.2,.75,.25,1); }
 .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+.reveal-on-scroll.is-resetting { transition: none; }
 .project-item:nth-child(even).reveal-on-scroll { transform: translateY(210px); }
 .project-item:nth-child(even).reveal-on-scroll.is-visible { transform: translateY(140px); }
 

@@ -60,7 +60,12 @@ if (reducedMotion) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
+        } else {
+          entry.target.classList.add("is-resetting");
+          entry.target.classList.remove("is-visible");
+          requestAnimationFrame(() => {
+            entry.target.classList.remove("is-resetting");
+          });
         }
       });
     },
