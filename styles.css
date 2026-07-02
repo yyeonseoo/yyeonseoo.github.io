@@ -57,10 +57,6 @@ nav a:hover::after, nav a:focus-visible::after { transform: scaleX(1); transform
 }
 .hero::after { content: ""; position: absolute; width: 420px; height: 420px; right: -190px; top: -190px; border: 1px solid rgba(21,23,20,.2); border-radius: 50%; }
 .hero-glow { position: absolute; width: 56vw; height: 56vw; left: -28vw; bottom: -38vw; border-radius: 50%; background: rgba(255,255,255,.32); filter: blur(2px); }
-.hero-ring { position: absolute; pointer-events: none; border: 1px solid rgba(21,23,20,.14); border-radius: 50%; }
-.hero-ring-one { width: clamp(90px, 11vw, 180px); aspect-ratio: 1; left: 36%; top: 9%; }
-.hero-ring-two { width: clamp(46px, 5vw, 80px); aspect-ratio: 1; right: 42%; bottom: 7%; background: rgba(255,255,255,.12); }
-.hero-wave { position: absolute; z-index: 0; left: 27%; bottom: 11%; width: clamp(190px, 24vw, 380px); fill: none; stroke: rgba(21,23,20,.16); stroke-width: 2; stroke-linecap: round; }
 .hero-intro { position: relative; z-index: 1; max-width: 700px; }
 .eyebrow { margin: 0 0 20px; font-size: .72rem; font-weight: 800; letter-spacing: .16em; }
 .hero-title { margin: 0; font-size: clamp(3rem, 5.6vw, 6.8rem); line-height: .98; letter-spacing: -.075em; }
