@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1200" role="img" aria-labelledby="title desc">
+  <title id="title">AI University Inquiry Routing</title>
+  <desc id="desc">학생의 질문을 AI가 분석해 적절한 대학 행정부서로 연결하는 UX 서비스와 리서치 결과</desc>
+  <rect width="720" height="1200" fill="#f4f6ef"/>
+  <circle cx="640" cy="60" r="210" fill="#a3b695" fill-opacity=".28"/>
+  <circle cx="55" cy="1120" r="190" fill="#10130f" fill-opacity=".05"/>
+  <text x="62" y="86" fill="#667b59" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">UX RESEARCH · SERVICE DESIGN</text>
+  <text x="62" y="150" fill="#10130f" font-family="Arial,sans-serif" font-size="42" font-weight="800">WHERE SHOULD</text>
+  <text x="62" y="200" fill="#10130f" font-family="Arial,sans-serif" font-size="42" font-weight="800">I ASK?</text>
+  <text x="62" y="246" fill="#667060" font-family="Arial,sans-serif" font-size="17">AI-based University Inquiry Routing</text>
+
+  <rect x="62" y="316" width="596" height="126" rx="28" fill="#ffffff" stroke="#d7ddd2" stroke-width="2"/>
+  <circle cx="126" cy="379" r="34" fill="#10130f"/>
+  <text x="126" y="387" text-anchor="middle" fill="#a3b695" font-family="Arial,sans-serif" font-size="24" font-weight="800">?</text>
+  <text x="182" y="370" fill="#10130f" font-family="Arial,sans-serif" font-size="22" font-weight="800">Student Inquiry</text>
+  <text x="182" y="402" fill="#71796d" font-family="Arial,sans-serif" font-size="16">Ask without knowing the department</text>
+
+  <path d="M360 442v72" stroke="#a3b695" stroke-width="5" stroke-linecap="round"/>
+  <path d="m347 500 13 17 13-17" fill="none" stroke="#a3b695" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="62" y="516" width="596" height="148" rx="28" fill="#a3b695"/>
+  <text x="92" y="558" fill="#425137" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="2">AI ROUTING</text>
+  <text x="92" y="605" fill="#10130f" font-family="Arial,sans-serif" font-size="27" font-weight="800">Intent → Department → Process</text>
+  <text x="92" y="638" fill="#425137" font-family="Arial,sans-serif" font-size="16">Analyze context and recommend the right path</text>
+
+  <path d="M360 664v72" stroke="#a3b695" stroke-width="5" stroke-linecap="round"/>
+  <path d="m347 722 13 17 13-17" fill="none" stroke="#a3b695" stroke-width="5" stroke-linecap="round"/>
+
+  <g font-family="Arial,sans-serif">
+    <rect x="62" y="740" width="186" height="126" rx="22" fill="#10130f"/>
+    <text x="88" y="780" fill="#a3b695" font-size="14" font-weight="700">RESEARCH</text>
+    <text x="88" y="826" fill="#ffffff" font-size="34" font-weight="800">32</text>
+    <text x="144" y="826" fill="#9ea59b" font-size="15">Survey</text>
+    <rect x="267" y="740" width="186" height="126" rx="22" fill="#10130f"/>
+    <text x="293" y="780" fill="#a3b695" font-size="14" font-weight="700">POSTS</text>
+    <text x="293" y="826" fill="#ffffff" font-size="34" font-weight="800">30</text>
+    <text x="349" y="826" fill="#9ea59b" font-size="15">Analyzed</text>
+    <rect x="472" y="740" width="186" height="126" rx="22" fill="#10130f"/>
+    <text x="498" y="780" fill="#a3b695" font-size="14" font-weight="700">INTERVIEW</text>
+    <text x="498" y="826" fill="#ffffff" font-size="34" font-weight="800">7</text>
+    <text x="530" y="826" fill="#9ea59b" font-size="15">People</text>
+  </g>
+
+  <rect x="62" y="922" width="596" height="178" rx="28" fill="#ffffff" stroke="#d7ddd2" stroke-width="2"/>
+  <text x="92" y="970" fill="#879080" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">BEFORE</text>
+  <text x="92" y="1015" fill="#10130f" font-family="Arial,sans-serif" font-size="24" font-weight="800">“Where should I ask?”</text>
+  <path d="M326 1038h66" stroke="#a3b695" stroke-width="5" stroke-linecap="round"/>
+  <path d="m378 1026 14 12-14 12" fill="none" stroke="#a3b695" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="422" y="970" fill="#667b59" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">AFTER</text>
+  <text x="422" y="1015" fill="#10130f" font-family="Arial,sans-serif" font-size="24" font-weight="800">“I’ll connect you.”</text>
+</svg>
