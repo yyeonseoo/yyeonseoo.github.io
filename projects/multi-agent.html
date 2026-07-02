@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Fine-Tuning 없이 Multi-Agent 구조로 정신건강 상담 품질 향상을 검증한 윤연서의 AI 연구 프로젝트" />
     <title>정신건강 상담 도메인 Multi-Agent LLM 연구 | 윤연서</title>
-    <link rel="stylesheet" href="../styles.css?v=b53e0a0-11" />
-    <script src="../script.js?v=b53e0a0-11" defer></script>
+    <link rel="stylesheet" href="../styles.css?v=e9ad769-12" />
+    <script src="../script.js?v=e9ad769-12" defer></script>
   </head>
   <body class="project-page">
     <header class="project-page-header">
@@ -57,13 +57,17 @@
           <div class="story-heading"><span>03 · PROBLEM SOLVING &amp; RESULT</span><h2>문제 해결 및<br />결과</h2></div>
           <div class="story-body">
             <p>프로젝트 중간 발표에서 최종 성능만으로는 해당 구조가 우수한 이유를 설명하기 어렵다는 피드백을 받았습니다.</p>
-            <p>이를 해결하기 위해 단순 성능 비교를 넘어 <strong>Agent 호출 로그와 위험도별 분석</strong>을 추가하였습니다. Safety Agent의 피드백이 실제 Revision에 반영되는지 검증하고, 위험도에 따른 상담 품질 변화를 분석하여 성능 향상의 원인을 설명하였습니다.</p>
-            <ul class="result-list">
-              <li>대부분의 수정이 위기 대응과 전문가 도움 권고를 보강하는 방향으로 이루어졌습니다.</li>
-              <li>중간 위험도에서는 Safety와 Empathy가 함께 향상되었습니다.</li>
-              <li>높은 위험도에서는 Empathy 개선 효과가 두드러졌습니다.</li>
-              <li>최종 구조가 안전성뿐 아니라 고위험 상황의 상담 품질을 효과적으로 보완함을 확인하였습니다.</li>
-            </ul>
+            <p>이를 해결하기 위해 단순 성능 비교를 넘어 <strong>Agent 호출 로그와 위험도별 분석</strong>을 추가하였습니다. Safety Agent의 피드백이 Revision 단계에 실제 반영되는지 검증하고, 구조 선택의 근거를 정량적으로 분석하였습니다.</p>
+            <p>최종적으로 <strong>Conditional Bidirectional 구조</strong>를 채택하였습니다.</p>
+
+            <div class="metrics-grid" aria-label="Conditional Bidirectional 구조의 주요 성능 변화">
+              <article class="metric-card"><span>SAFETY</span><strong>4.88 <i>→</i> 4.96</strong><small>향상</small></article>
+              <article class="metric-card"><span>RUNTIME</span><strong>22.7s <i>→</i> 15.6s</strong><small>약 31% 감소</small></article>
+              <article class="metric-card"><span>PARSE ERROR</span><strong>94% <i>→</i> 0%</strong><small>오류 제거</small></article>
+            </div>
+
+            <p>반면 Faithfulness는 소폭 감소하였지만, 정신건강 상담 도메인에서는 <strong>안전성과 시스템 안정성이 더욱 중요하다</strong>고 판단하여 최종 구조로 선정하였습니다.</p>
+            <p>또한 Draft Response와 Final Response를 비교한 결과, <strong>29개 중 28개 응답에서 실제 수정</strong>이 발생했으며, <strong>21개 응답에는 전문가 상담 및 위기 대응 안내</strong>가 추가되었습니다. 이는 성능 향상이 단순한 재생성이 아니라 Safety Agent의 피드백이 Revision 단계에 반영된 결과임을 확인한 것입니다.</p>
           </div>
         </section>
 
