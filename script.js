@@ -43,9 +43,14 @@ if (carousel) {
   let pressedLink = null;
 
   const modulo = (value, divisor) => ((value % divisor) + divisor) % divisor;
+  const normalizeAngle = (value) => modulo(value + 180, 360) - 180;
 
   function render() {
     carousel.style.setProperty("--rotation", `${rotation}deg`);
+    items.forEach((item, index) => {
+      const relativeAngle = normalizeAngle(rotation + index * stepAngle);
+      item.querySelector(".project-card").style.setProperty("--face-angle", `${relativeAngle * -0.45}deg`);
+    });
   }
 
   function updateActive() {
