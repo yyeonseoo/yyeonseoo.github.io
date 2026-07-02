@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Fine-Tuning 없이 Multi-Agent 구조로 정신건강 상담 품질 향상을 검증한 윤연서의 AI 연구 프로젝트" />
     <title>정신건강 상담 도메인 Multi-Agent LLM 연구 | 윤연서</title>
-    <link rel="stylesheet" href="../styles.css?v=e9ad769-12" />
-    <script src="../script.js?v=e9ad769-12" defer></script>
+    <link rel="stylesheet" href="../styles.css?v=9bcdd70-15" />
+    <script src="../script.js?v=9bcdd70-15" defer></script>
   </head>
   <body class="project-page">
     <header class="project-page-header">
@@ -40,7 +40,7 @@
           <div class="story-heading"><span>01 · BACKGROUND &amp; GOAL</span><h2>배경 및<br />목표</h2></div>
           <div class="story-body">
             <p>정신건강 상담은 잘못된 응답이 실제 사용자 안전과 직결되는 <strong>고위험 도메인</strong>입니다. 기존 연구는 대부분 최종 응답 성능만 평가하기 때문에 어떤 Agent가 성능 향상에 기여했는지 설명하기 어렵다는 한계가 있었습니다.</p>
-            <p>본 프로젝트에서는 <strong>Fine-Tuning 없이 Multi-Agent 구조만으로 상담 품질을 향상시킬 수 있는지</strong>를 검증하고, 성능뿐 아니라 구조의 타당성까지 설명할 수 있는 연구를 목표로 하였습니다.</p>
+            <p>본 프로젝트에서는 <strong>Fine-Tuning 없이 Multi-Agent 구조만으로 상담 품질을 향상시킬 수 있는지</strong>를 검증하고, 4개의 구조 비교와 단계별 Agent 분석을 통해 성능뿐 아니라 구조의 타당성까지 설명할 수 있는 연구를 목표로 하였습니다.</p>
           </div>
         </section>
 
@@ -48,17 +48,23 @@
           <div class="story-heading"><span>02 · PROCESS &amp; CONTRIBUTION</span><h2>연구 과정 및<br />나의 역할</h2></div>
           <div class="story-body">
             <p>프로젝트에서 <strong>연구 계획 구축 및 실험 설계</strong>를 담당하였습니다.</p>
-            <p>Single LLM과 Multi-Agent 구조의 기본 성능을 비교한 뒤, RAG 적용 여부, Agent 수, Agent 호출 방식 등 다양한 구조를 단계적으로 실험하였습니다. 이를 통해 상담 품질과 실행 효율을 함께 비교하였으며, Safety Agent가 문제를 감지한 경우에만 Revision Agent를 호출하는 <strong>Conditional Bidirectional 구조</strong>가 가장 우수한 성능을 보이는 것을 확인하였습니다.</p>
-            <div class="research-flow"><span>Single LLM 비교</span><b>→</b><span>RAG 적용 여부</span><b>→</b><span>Agent 구조 실험</span><b>→</b><span>Conditional Revision</span></div>
+            <p>Single LLM, Single+RAG, Two-Agent, Three-Agent 총 4개의 구조를 비교한 뒤, RAG 적용 여부, Agent 수, Agent 호출 방식 등 <strong>6회의 구조 실험</strong>을 수행하였습니다. Faithfulness, Relevancy, Empathy, Safety와 Runtime을 기준으로 상담 품질과 실행 효율을 함께 비교하였으며, Safety Agent가 문제를 감지한 경우에만 Revision Agent를 호출하는 <strong>Conditional Bidirectional 구조</strong>가 가장 우수한 성능을 보이는 것을 확인하였습니다.</p>
+            <div class="metrics-grid" aria-label="연구 설계 규모">
+              <article class="metric-card"><span>STRUCTURES</span><strong>4</strong><small>비교 구조</small></article>
+              <article class="metric-card"><span>EXPERIMENTS</span><strong>6</strong><small>구조 실험</small></article>
+              <article class="metric-card"><span>METRICS</span><strong>5</strong><small>평가 지표</small></article>
+            </div>
+            <div class="research-flow"><span>Single LLM</span><b>→</b><span>Single + RAG</span><b>→</b><span>Two-Agent</span><b>→</b><span>Three-Agent</span></div>
           </div>
         </section>
 
         <section class="story-section reveal-on-scroll">
           <div class="story-heading"><span>03 · PROBLEM SOLVING &amp; RESULT</span><h2>문제 해결 및<br />결과</h2></div>
           <div class="story-body">
-            <p>프로젝트 중간 발표에서 최종 성능만으로는 해당 구조가 우수한 이유를 설명하기 어렵다는 피드백을 받았습니다.</p>
-            <p>이를 해결하기 위해 단순 성능 비교를 넘어 <strong>Agent 호출 로그와 위험도별 분석</strong>을 추가하였습니다. Safety Agent의 피드백이 Revision 단계에 실제 반영되는지 검증하고, 구조 선택의 근거를 정량적으로 분석하였습니다.</p>
-            <p>최종적으로 <strong>Conditional Bidirectional 구조</strong>를 채택하였습니다.</p>
+            <p>프로젝트 중간 발표에서 <strong>“최종 성능만으로는 구조 선택의 타당성을 설명하기 어렵다.”</strong>는 피드백을 받았습니다.</p>
+            <p>이를 해결하기 위해 단순 성능 비교를 넘어 <strong>29개의 Draft Response와 Final Response</strong>를 비교하고, Agent 호출 로그 및 위험도별 분석을 추가하였습니다. Safety Agent의 피드백이 Revision 단계에 실제 반영되는지를 검증하여 구조 선택의 근거를 정량적으로 분석하였습니다.</p>
+            <p>구조 비교 결과 Three-Agent 구조는 Single LLM 대비 <strong>Safety(4.62→4.83)</strong>와 <strong>Faithfulness(3.66→4.03)</strong>를 향상시켰습니다. 이후 Agent 기여도 분석을 통해 Conditional Bidirectional 구조를 최종 구조로 확정하였습니다.</p>
+            <p>최종 후보 구조 안에서 Agent 호출 방식을 추가로 비교한 결과는 다음과 같습니다.</p>
 
             <div class="metrics-grid" aria-label="Conditional Bidirectional 구조의 주요 성능 변화">
               <article class="metric-card"><span>SAFETY</span><strong>4.88 <i>→</i> 4.96</strong><small>향상</small></article>
@@ -66,8 +72,8 @@
               <article class="metric-card"><span>PARSE ERROR</span><strong>94% <i>→</i> 0%</strong><small>오류 제거</small></article>
             </div>
 
-            <p>반면 Faithfulness는 소폭 감소하였지만, 정신건강 상담 도메인에서는 <strong>안전성과 시스템 안정성이 더욱 중요하다</strong>고 판단하여 최종 구조로 선정하였습니다.</p>
-            <p>또한 Draft Response와 Final Response를 비교한 결과, <strong>29개 중 28개 응답에서 실제 수정</strong>이 발생했으며, <strong>21개 응답에는 전문가 상담 및 위기 대응 안내</strong>가 추가되었습니다. 이는 성능 향상이 단순한 재생성이 아니라 Safety Agent의 피드백이 Revision 단계에 반영된 결과임을 확인한 것입니다.</p>
+            <p>Conditional 호출 방식으로 최적화하는 과정에서 Faithfulness는 소폭 감소하였지만, 정신건강 상담 도메인에서는 <strong>안전성과 시스템 안정성이 더욱 중요하다</strong>고 판단하여 최종 구조로 선정하였습니다.</p>
+            <p>또한 29개 응답 중 <strong>28개(96.6%)에서 Revision이 실제 수행</strong>되었으며, <strong>21개 응답(72.4%)에는 전문가 상담 및 위기 대응 안내</strong>가 추가되었습니다. 이를 통해 성능 향상이 단순한 재생성이 아니라 Safety Agent의 피드백이 실제 Revision 단계에 반영된 결과임을 확인하였습니다.</p>
           </div>
         </section>
 
@@ -76,6 +82,7 @@
           <div class="story-body">
             <p>이번 프로젝트를 통해 높은 성능을 달성하는 것보다 <strong>왜 이러한 결과가 나타났는지를 설명할 수 있는 연구 설계</strong>가 중요하다는 점을 배웠습니다.</p>
             <p>또한 중간 피드백을 바탕으로 연구 방향을 수정하고, 성능 비교를 넘어 구조의 기여도를 분석하는 과정에서 실험 설계와 결과 해석 역량을 키울 수 있었습니다.</p>
+            <p>단순히 가장 높은 성능을 찾는 연구가 아니라, <strong>구조 선택의 근거를 실험적으로 입증하는 연구</strong>의 중요성을 체감한 프로젝트였습니다.</p>
           </div>
         </section>
       </div>
