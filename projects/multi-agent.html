@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fine-Tuning 없이 Multi-Agent 구조로 정신 건강 상담 품질 향상을 검증한 윤연서의 AI 연구 프로젝트" />
+    <title>Multi-Agent 정신 건강 상담 연구 | 윤연서</title>
+    <link rel="stylesheet" href="../styles.css?v=d92aa4c-10" />
+    <script src="../script.js?v=d92aa4c-10" defer></script>
+  </head>
+  <body class="project-page">
+    <header class="project-page-header">
+      <a href="../index.html#projects">← 프로젝트로 돌아가기</a>
+      <a class="wordmark" href="../index.html">YYS<span>.</span></a>
+      <a href="../index.html">HOME</a>
+    </header>
+
+    <main class="project-detail">
+      <section class="detail-hero reveal-on-scroll">
+        <div>
+          <p class="detail-label">05 · AI/RESEARCH · 2026.04—06</p>
+          <h1>Multi-Agent 프로젝트 : 정신 건강 상담 도메인을 주제로</h1>
+        </div>
+        <p class="detail-summary">정신 건강 상담 도메인에서 Fine-Tuning 없이 Multi-Agent 구조만으로 상담 품질을 향상시킬 수 있는지 단계별 실험과 분석을 통해 검증한 연구 프로젝트입니다.</p>
+      </section>
+
+      <dl class="project-facts reveal-on-scroll">
+        <div class="project-fact"><dt>기간</dt><dd>2026.04 — 2026.06</dd></div>
+        <div class="project-fact"><dt>인원</dt><dd>4명</dd></div>
+        <div class="project-fact"><dt>역할</dt><dd>연구 계획 설계<br />실험 설계 및 평가 체계 구축</dd></div>
+        <div class="project-fact"><dt>기술 스택</dt><dd>Python · Ollama · Qwen2.5-7B · ChromaDB · RAG · SQLite · LLM as a Judge</dd></div>
+      </dl>
+
+      <div class="detail-cover reveal-on-scroll">
+        <img src="../assets/multi-agent.svg" alt="Response Agent, Safety Agent, Revision Agent로 구성된 Conditional Bidirectional 구조" />
+      </div>
+
+      <div class="project-story">
+        <section class="story-section reveal-on-scroll">
+          <div class="story-heading"><span>01 · CONTEXT</span><h2>배경과<br />문제 정의</h2></div>
+          <div class="story-body">
+            <p>최근 LLM 기반 정신 건강 상담 서비스가 증가하고 있지만, 상담 도메인은 잘못된 응답이 실제 사용자 안전에 영향을 미칠 수 있는 <strong>High-Risk Domain</strong>입니다.</p>
+            <p>기존 연구는 대부분 최종 응답 성능만 비교하기 때문에 어떤 Agent가 성능 향상에 기여했는지 설명하기 어려웠습니다. 이에 Fine-Tuning 없이 Agent 구조 설계만으로 상담 품질을 향상시킬 수 있는지를 연구 질문으로 설정하고, 성능뿐 아니라 구조의 타당성을 설명할 수 있는 평가 방법을 제안하고자 했습니다.</p>
+          </div>
+        </section>
+
+        <section class="story-section reveal-on-scroll">
+          <div class="story-heading"><span>02 · OBJECTIVE</span><h2>목표와<br />성공 기준</h2></div>
+          <div class="story-body">
+            <div class="story-grid">
+              <article class="story-card"><h3>연구 목표</h3><ul><li>Multi-Agent 구조와 Single LLM의 상담 품질 비교</li><li>Agent 간 상호작용이 상담 품질에 미치는 영향 분석</li><li>각 Agent의 역할과 기여도를 설명 가능한 형태로 검증</li></ul></article>
+              <article class="story-card"><h3>성공 기준</h3><ul><li>Safety, Faithfulness, Relevancy, Empathy 향상</li><li>성능 향상 원인을 단계별 분석으로 설명</li><li>LLM as a Judge 기반의 일관된 평가 체계 구축</li></ul></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section reveal-on-scroll">
+          <div class="story-heading"><span>03 · CONTRIBUTION</span><h2>나의 역할과<br />기여</h2></div>
+          <div class="story-body">
+            <p>프로젝트에서 <strong>연구 계획과 전체 실험 Pipeline 설계</strong>를 담당했습니다.</p>
+            <div class="story-grid">
+              <article class="story-card"><h3>연구 설계</h3><ul><li>연구 문제 및 가설 수립</li><li>구조 비교 실험 설계</li><li>단계별 검증 전략 설계</li></ul></article>
+              <article class="story-card"><h3>평가와 분석</h3><ul><li>LLM as a Judge 평가 체계 선정</li><li>Agent 기여도 분석 방향 제안</li><li>위험도별 추가 분석 설계</li></ul></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section reveal-on-scroll">
+          <div class="story-heading"><span>04 · APPROACH</span><h2>핵심 접근<br />과정</h2></div>
+          <div class="story-body">
+            <p>기존 연구처럼 최종 응답만 비교하는 대신 <strong>Stage-wise Evaluation</strong>을 적용했습니다. Single LLM, RAG, Multi-Agent 구조를 비교한 뒤 각 Agent의 호출 로그와 위험도별 결과를 분석했습니다.</p>
+            <div class="research-flow"><span>Single LLM</span><b>→</b><span>RAG</span><b>→</b><span>Multi-Agent</span><b>→</b><span>Stage-wise Evaluation</span></div>
+            <p>최종적으로 Response Agent가 생성한 응답을 Safety Agent가 검증하고, 문제가 있을 경우에만 Revision Agent를 호출하는 <strong>Conditional Bidirectional 구조</strong>를 설계했습니다.</p>
+          </div>
+        </section>
+
+        <section class="story-section reveal-on-scroll">
+          <div class="story-heading"><span>05 · PROBLEM SOLVING</span><h2>주요 문제와<br />해결</h2></div>
+          <div class="story-body">
+            <p>프로젝트 중간 점검에서 단순히 성능 수치만 제시해서는 최종 구조가 우수한 이유를 설명하기 어렵다는 피드백을 받았습니다. 이를 반영해 연구를 <strong>구조 비교 중심에서 Agent 기여도 분석 중심</strong>으로 확장했습니다.</p>
+            <div class="story-grid">
+              <article class="story-card"><h3>분석 확장</h3><ul><li>Agent 호출 로그 분석</li><li>Revision 발생 원인 분석</li><li>Safety 피드백 반영 여부 확인</li></ul></article>
+              <article class="story-card"><h3>위험도별 검증</h3><ul><li>Low / Medium / High Risk 분리</li><li>위험도별 상담 품질 변화 분석</li><li>안전성과 공감 효과를 별도로 해석</li></ul></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section reveal-on-scroll">
+          <div class="story-heading"><span>06 · RESULT</span><h2>결과와<br />검증</h2></div>
+          <div class="story-body">
+            <p>Response Agent 이후 Safety Agent가 검증하고 필요한 경우에만 Revision을 수행하는 <strong>Conditional Bidirectional 구조</strong>가 가장 우수한 성능을 보였습니다.</p>
+            <ul class="result-list">
+              <li>Safety Agent의 피드백이 실제 Revision에 반영됨을 로그 데이터로 검증했습니다.</li>
+              <li>대부분의 수정이 위기 대응 문구와 전문가 상담 권고를 강화하는 방향으로 이루어졌습니다.</li>
+              <li>Medium Risk에서는 Safety와 Empathy가 함께 향상됐습니다.</li>
+              <li>High Risk에서는 Empathy 향상 효과가 특히 크게 나타났습니다.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="story-section reveal-on-scroll">
+          <div class="story-heading"><span>07 · RETROSPECTIVE</span><h2>회고와<br />개선 방향</h2></div>
+          <div class="story-body">
+            <p>높은 성능을 달성하는 것만큼 <strong>왜 해당 구조가 좋은지 설명할 수 있는 연구 설계</strong>가 중요하다는 점을 배웠습니다. 중간 피드백을 반영해 실험 방향을 수정하고, 구조의 성능뿐 아니라 Agent별 기여도를 분석하는 연구로 발전시킨 경험을 얻었습니다.</p>
+            <p>향후에는 더 다양한 LLM과 실제 사용자 평가를 추가해 일반화 성능을 검증하고, Retrieval 품질과 Agent 협업 전략을 함께 최적화하는 연구로 확장하고자 합니다.</p>
+          </div>
+        </section>
+      </div>
+
+      <nav class="project-pagination" aria-label="프로젝트 이동"><a href="scheduler.html">← 이전 프로젝트<br />CLUB SCHEDULER</a><a href="../index.html#projects">전체 프로젝트<br />목록으로 →</a></nav>
+    </main>
+  </body>
+</html>

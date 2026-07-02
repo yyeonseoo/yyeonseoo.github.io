@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Multi-Agent Mental Health Counseling Research</title>
+  <desc id="desc">Response Agent, Safety Agent, Revision Agent가 상담 응답을 단계적으로 생성하고 검증하는 구조</desc>
+  <rect width="720" height="1200" fill="#10130f"/>
+  <circle cx="580" cy="110" r="170" fill="none" stroke="#a3b695" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="92" cy="1060" r="210" fill="#a3b695" fill-opacity=".08"/>
+  <text x="64" y="92" fill="#a3b695" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">AI · RESEARCH</text>
+  <text x="64" y="150" fill="#f5f7f1" font-family="Arial,sans-serif" font-size="42" font-weight="800">MULTI-AGENT</text>
+  <text x="64" y="198" fill="#f5f7f1" font-family="Arial,sans-serif" font-size="42" font-weight="800">COUNSELING</text>
+  <text x="64" y="238" fill="#899284" font-family="Arial,sans-serif" font-size="17">Stage-wise Evaluation · Conditional Revision</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="75" y="320" width="570" height="128" rx="28" fill="#e9eee4"/>
+    <circle cx="139" cy="384" r="34" fill="#a3b695"/>
+    <text x="139" y="392" text-anchor="middle" fill="#10130f" font-size="24" font-weight="800">R</text>
+    <text x="198" y="375" fill="#10130f" font-size="24" font-weight="800">Response Agent</text>
+    <text x="198" y="407" fill="#626b5d" font-size="16">상담 응답 생성</text>
+    <path d="M360 448v76" stroke="#a3b695" stroke-width="4" stroke-linecap="round"/>
+    <path d="m348 510 12 16 12-16" fill="none" stroke="#a3b695" stroke-width="4" stroke-linecap="round"/>
+    <rect x="75" y="526" width="570" height="128" rx="28" fill="#a3b695"/>
+    <circle cx="139" cy="590" r="34" fill="#10130f"/>
+    <text x="139" y="598" text-anchor="middle" fill="#a3b695" font-size="24" font-weight="800">S</text>
+    <text x="198" y="581" fill="#10130f" font-size="24" font-weight="800">Safety Agent</text>
+    <text x="198" y="613" fill="#35412f" font-size="16">안전성 검증 · 위험도 판단</text>
+    <path d="M360 654v76" stroke="#a3b695" stroke-width="4" stroke-linecap="round"/>
+    <path d="m348 716 12 16 12-16" fill="none" stroke="#a3b695" stroke-width="4" stroke-linecap="round"/>
+    <rect x="75" y="732" width="570" height="128" rx="28" fill="#e9eee4"/>
+    <circle cx="139" cy="796" r="34" fill="#a3b695"/>
+    <text x="139" y="804" text-anchor="middle" fill="#10130f" font-size="24" font-weight="800">V</text>
+    <text x="198" y="787" fill="#10130f" font-size="24" font-weight="800">Revision Agent</text>
+    <text x="198" y="819" fill="#626b5d" font-size="16">필요한 경우에만 응답 보완</text>
+  </g>
+  <rect x="64" y="950" width="592" height="132" rx="24" fill="none" stroke="#a3b695" stroke-opacity=".55"/>
+  <text x="92" y="996" fill="#a3b695" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="2">EVALUATION</text>
+  <text x="92" y="1037" fill="#f5f7f1" font-family="Arial,sans-serif" font-size="18">Safety · Faithfulness · Relevancy · Empathy</text>
+</svg>

@@ -34,6 +34,7 @@ if (carousel) {
   const title = carousel.querySelector("#carousel-title");
   const detailLink = carousel.querySelector("#carousel-link");
   const stepAngle = 360 / items.length;
+  items.forEach((item, index) => item.style.setProperty("--item-angle", `${index * stepAngle}deg`));
   let rotation = 0;
   let activeIndex = 0;
   let pointerStart = 0;
