@@ -4,7 +4,7 @@
   <rect width="720" height="1200" fill="#10130f"/>
   <circle cx="580" cy="110" r="170" fill="none" stroke="#a3b695" stroke-opacity=".22" stroke-width="2"/>
   <circle cx="92" cy="1060" r="210" fill="#a3b695" fill-opacity=".08"/>
-  <text x="64" y="92" fill="#a3b695" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">AI · RESEARCH</text>
+  <text x="64" y="92" fill="#a3b695" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">AI · TEXTMINING</text>
   <text x="64" y="150" fill="#f5f7f1" font-family="Arial,sans-serif" font-size="42" font-weight="800">MULTI-AGENT</text>
   <text x="64" y="198" fill="#f5f7f1" font-family="Arial,sans-serif" font-size="42" font-weight="800">COUNSELING</text>
   <text x="64" y="238" fill="#899284" font-family="Arial,sans-serif" font-size="17">Stage-wise Evaluation · Conditional Revision</text>
